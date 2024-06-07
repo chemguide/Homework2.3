@@ -9,13 +9,14 @@ public class Main {
         Bicycle bicycle = new Bicycle("bicycle1", 2);
         Bicycle bicycle2 = new Bicycle("bicycle2", 2);
 
-        car.makeService();
-        car2.makeService();
+        ServiceStation service = new ServiceStation();
+        service.check(car);
+        service.check(car2);
 
-        bicycle.makeService();
-        bicycle2.makeService();
+        service.check(truck);
+        service.check(truck2);
 
-        truck.makeService();
-        truck2.makeService();
+        service.check(bicycle);
+        service.check(bicycle2);
     }
 }

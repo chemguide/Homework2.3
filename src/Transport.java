@@ -14,23 +14,4 @@ public abstract class Transport {
     public int getWeelsCount() {
         return weelsCount;
     }
-
-    public void makeService() {
-        System.out.println("Обслуживаем " + this.getModelName());
-        for (int i = 0; i < this.getWeelsCount(); i++) {
-            this.updateTyre();
-        }
-    }
-
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
-    }
-
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
-    }
-
-    public void checkTrailer() {
-        System.out.println("Проверяем прицеп");
-    }
 }
